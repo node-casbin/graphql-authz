@@ -1,0 +1,14 @@
+p,*,userById,query
+
+p,*,project,query
+p,*,project.id,query
+p,admin,project.name,query
+p,user,project.members,query
+p,user,project.members.id,query
+p,user,project.members.name,query
+p,rolea,project.members.tickets,query
+p,roleb,project.members.tickets.id,query
+p,rolec,project.members.tickets.message,query
+
+g,user,rolea
+g,rolea,roleb
