@@ -1,6 +1,6 @@
 # graphql-authz
 
-graphql-authz is a Casbin authorization middleware for graphql-js
+graphql-authz is a Casbin authorization middleware for [GraphQL.js](https://github.com/graphql/graphql-js)
 
 [![NPM version][npm-image]][npm-url]
 [![NPM download][download-image]][download-url]
