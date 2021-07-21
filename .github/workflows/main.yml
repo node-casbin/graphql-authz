@@ -24,3 +24,13 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           flag-name: run-${{ matrix.node-version }}-${{ matrix.os }}
           parallel: true
+
+  coverageReport:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Report
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.github_token }}
+          parallel-finished: true
